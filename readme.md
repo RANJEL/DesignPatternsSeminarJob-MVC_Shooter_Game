@@ -24,20 +24,22 @@ Singleton
 
 ## Installation
 You need maven to build my game.
-$ maven clean install
+
+$ mvn clean install
 
 Then start game from CLI. Navigate to folder target/ and type
+
 $ java -jar mvc_shooter_assign-1.0.jar realistic
 
 ## Game Controls
-Space:          Fire from cannon
-F:              Move cannon up
-V:              Move cannon down
-Right arrow:    Increase force of shot
-Left arrow:     Decrease force of shot
-Arrow up:       Increase angle of shot
-Arrow down:     Decrease angle of shot
-+:              Increase in game gravity
--:              Decrease in game gravity
-SHIFT:          Switch cannon to single/multiple shots mode
-Z:              Use rollback to get previous game state
+ - Space:       Fire from cannon
+ - F:              Move cannon up
+ - V:              Move cannon down
+ - Right arrow:    Increase force of shot
+ - Left arrow:     Decrease force of shot
+ - Arrow up:       Increase angle of shot
+ - Arrow down:     Decrease angle of shot
+ - +:              Increase in game gravity
+ - -:              Decrease in game gravity
+ - SHIFT:          Switch cannon to single/multiple shots mode
+ - Z:              Use rollback to get previous game state
