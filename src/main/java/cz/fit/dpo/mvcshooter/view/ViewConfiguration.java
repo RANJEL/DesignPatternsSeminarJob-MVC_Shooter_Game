@@ -13,7 +13,7 @@ public final class ViewConfiguration {
     public static final Coordinates GAME_WINDOW_SIZE;
 
     static {
-        GAME_WINDOW_SIZE = new Coordinates(1500, 1500);
+        GAME_WINDOW_SIZE = new Coordinates(800, 800);
     }
 
     private static final int INDENT = 30;
