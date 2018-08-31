@@ -17,8 +17,8 @@ import static org.junit.Assert.assertEquals;
  * Tests for class {@link Cannon}
  */
 public class CannonTest {
-    private static final int X = 1000;
-    private static final int Y = 1000;
+    private static final int X = 500;
+    private static final int Y = 500;
     private static final CannonShootState CANNON_SHOOT_STATE = new CannonSingleShootState();
 
     private Cannon cannon;
@@ -64,7 +64,7 @@ public class CannonTest {
 
     @Test
     public void moveUpAndDown() {
-        final int times = Rng.instance().getRandomNumberInRange(1, 100);
+        final int times = Rng.instance().getRandomNumberInRange(1, 10);
         for (int i = 0; i < times; i++) {
             cannon.moveUp();
         }
@@ -79,7 +79,7 @@ public class CannonTest {
 
     @Test
     public void fire() {
-        InfoPanel infoPanel = new InfoPanel(900, 900, 65, 20, 10.0, 0);
+        InfoPanel infoPanel = new InfoPanel(450, 450, 65, 20, 10.0, 0);
         GameObjectFactory gameObjectFactory = new GameObjectSimpleFactory();
 
         List<Missile> missileList = cannon.fire(infoPanel, gameObjectFactory);
